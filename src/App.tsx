@@ -14,10 +14,20 @@ const App = () => {
       ) : (
         <form onSubmit={(e) => e.preventDefault()}>
           <div>
-            <input type="text" ref={usernameInput} placeholder="username" />
+            <input
+              name="username"
+              type="text"
+              ref={usernameInput}
+              placeholder="username"
+            />
           </div>
           <div>
-            <input type="text" ref={passwordInput} placeholder="password" />
+            <input
+              name="password"
+              type="text"
+              ref={passwordInput}
+              placeholder="password"
+            />
           </div>
           <button
             type="submit"
